@@ -2,10 +2,10 @@ package main
 
 import (
 	"github.com/InvalidJokerDE/TestProxy/plugins/bossbar"
+	"github.com/InvalidJokerDE/TestProxy/plugins/commands"
 	"github.com/InvalidJokerDE/TestProxy/plugins/globalchat"
 	"github.com/InvalidJokerDE/TestProxy/plugins/ping"
 	"github.com/InvalidJokerDE/TestProxy/plugins/tablist"
-	"github.com/InvalidJokerDE/TestProxy/plugins/titlecmd"
 	"go.minekube.com/gate/cmd/gate"
 	"go.minekube.com/gate/pkg/edition/java/proxy"
 )
@@ -23,7 +23,7 @@ func main() {
 		globalchat.Plugin,
 		bossbar.Plugin,
 		ping.Plugin,
-		titlecmd.Plugin,
+		commands.Plugin,
 
 		// Add more plugins as you like.
 		// They will be initialized in the same order as appended.
